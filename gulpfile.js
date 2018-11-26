@@ -110,7 +110,7 @@ gulp.task('default', ['css', 'concat_minif']);
 
 var svgSprite    = require('gulp-svg-sprite');
 //var plumber      = require('gulp-plumber');
-var baseDir      = './svg';   // <-- Set to your SVG base directory
+var baseDir      = './img/svg';   // <-- Set to your SVG base directory
 //var baseDir      = 'svgmin';   // <-- Set to your SVG base directory
 var svgGlob      = '**/*.svg';       // <-- Glob to match your SVG files
 var outDir       = './img/';     // <-- Main output directory

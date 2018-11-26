@@ -1,3 +1,32 @@
+@charset "UTF-8";
+body, * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+}
+
+.Icon {
+  /* Permet de redimensionner en changeant la font-size de l’icône */
+  width: 1em;
+  height: 1em;
+  /* Bel alignement visuel des icônes avec le texte */
+  vertical-align: -0.15em;
+  /* fill par défaut = valeur de la propriété couleur de son élément parent */
+  fill: currentColor;
+  /* Les paths et les strokes qui dépassent de la viewBox peuvent apparaître dans IE.
+     Si vous utilisez normalize.css, inutile de l’ajouter. */
+  overflow: hidden;
+}
+
+.hidden_sprite {
+  width: 0;
+  height: 0;
+}
+
 nav {
   background: lightgrey;
   display: flex;
@@ -13,6 +42,8 @@ nav ul {
 
 nav ul li {
   list-style: none;
+  display: flex;
+  flex-direction: column;
 }
 
 nav ul li a {
@@ -22,23 +53,22 @@ nav ul li a {
 }
 
 nav ul li :hover {
-  color: darken;
+  color: #b3b3b3;
 }
 
 nav img {
   width: 10%;
 }
 
-h1 {
+main {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-body, * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+main h1 {
+  margin: 23% 0;
+  text-shadow: 0 0 1px white;
 }
 
 /*# sourceMappingURL=mon_site.css.map */
